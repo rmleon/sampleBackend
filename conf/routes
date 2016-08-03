@@ -1,0 +1,6 @@
+
+GET     /trades                 controllers.TradesController.list(start: Int, limit: Int)
+POST    /trades                 controllers.TradesController.create
+DELETE  /trades/:id             controllers.TradesController.delete(id)
+PUT     /trades/:id             controllers.TradesController.update(id)
+
