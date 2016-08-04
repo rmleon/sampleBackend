@@ -12,6 +12,7 @@ libraryDependencies ++= Seq(
   "org.postgresql" % "postgresql" % "9.4-1206-jdbc42",
   "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.0" % "test",
   "com.typesafe.slick" %% "slick-codegen" % "3.1.0",
+  filters,
   evolutions
 )
 

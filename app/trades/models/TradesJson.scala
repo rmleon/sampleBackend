@@ -5,7 +5,6 @@ import play.api.libs.json.{JsPath, Reads, Writes}
 
 /**
   * @author Ricardo Leon
-  * @since 8/1/16
   */
 object TradesJson {
   implicit val tradesRowsWrites: Writes[TradesTable.TradesRow] =

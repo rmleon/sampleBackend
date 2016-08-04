@@ -6,7 +6,6 @@ import slick.lifted.TableQuery
   * This file was partially auto-generated through Slick 3.
   *
   * @author Ricardo Leon
-  * @since 8/1/16
   */
 object TradesTable extends {
   final val profile = slick.driver.PostgresDriver

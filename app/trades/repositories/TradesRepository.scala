@@ -10,7 +10,6 @@ import scala.concurrent.Future
 
 /**
   * @author Ricardo Leon
-  * @since 8/1/16
   */
 class TradesRepository @Inject()(dbConfigProvider: DatabaseConfigProvider) {
   private val dbConfig = dbConfigProvider.get[JdbcProfile]
