@@ -1,4 +1,4 @@
-package models
+package trades.models
 
 import slick.lifted.TableQuery
 

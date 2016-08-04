@@ -1,10 +1,10 @@
-package repositories
+package trades.repositories
 
 import javax.inject.Inject
 
-import models.TradesTable
 import play.api.db.slick.DatabaseConfigProvider
 import slick.driver.JdbcProfile
+import trades.models.TradesTable
 
 import scala.concurrent.Future
 

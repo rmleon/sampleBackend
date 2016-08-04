@@ -1,6 +1,5 @@
-package models.json
+package trades.models
 
-import models.TradesTable
 import play.api.libs.functional.syntax.{toFunctionalBuilderOps, unlift}
 import play.api.libs.json.{JsPath, Reads, Writes}
 

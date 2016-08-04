@@ -1,13 +1,13 @@
-package controllers
+package trades.controllers
 
 import java.util.UUID
 import javax.inject.Inject
 
-import models.TradesTable
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.json.{JsError, JsSuccess, Json}
 import play.api.mvc.{Action, BodyParsers, Controller}
-import repositories.TradesRepository
+import trades.models.TradesTable
+import trades.repositories.TradesRepository
 
 import scala.concurrent.Future
 
@@ -15,7 +15,7 @@ import scala.concurrent.Future
 class TradesController @Inject()(repository: TradesRepository)
   extends Controller {
 
-  import models.json.TradesJson.{tradesRowsReads, tradesRowsWrites}
+  import trades.models.TradesJson.{tradesRowsReads, tradesRowsWrites}
 
   private val ok       = Ok(Json.obj("success" -> true))
   private val notFound = NotFound(Json.obj("success" -> false, "message" -> "trade not found"))
