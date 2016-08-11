@@ -33,7 +33,8 @@ class TradesController @Inject()(repository: TradesRepository)
         val tradeWithKey = trade.copy(id = UUID.randomUUID())
         repository.create(tradeWithKey).map { insertedRecords =>
           if (insertedRecords > 0)
-            ok
+            // Return the newly created record
+            Ok(Json.toJson(tradeWithKey))
           else
             InternalServerError(Json.obj("success" -> false, "message" -> "Could not create trade"))
         }
